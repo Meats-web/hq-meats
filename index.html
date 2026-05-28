@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HQ Meats | Premium Meat Processing</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Open Sans',sans-serif;
+      background:#f4f0e8;
+      color:#2c241c;
+      line-height:1.6;
+    }
+
+    header{
+      background:
+      linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+      url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content h1{
+      font-size:4rem;
+      font-family:'Playfair Display',serif;
+      margin-bottom:20px;
+      letter-spacing:2px;
+    }
+
+    .hero-content p{
+      font-size:1.3rem;
+      max-width:700px;
+      margin:auto;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 30px;
+      background:#7a2f1d;
+      color:white;
+      text-decoration:none;
+      border-radius:4px;
+      transition:.3s;
+      font-weight:600;
+    }
+
+    .btn:hover{
+      background:#5e2315;
+    }
+
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      background:rgba(34,25,20,.95);
+      padding:15px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:1000;
+    }
+
+    nav h2{
+      color:#fff;
+      font-family:'Playfair Display',serif;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:25px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .section-title h2{
+      font-size:2.8rem;
+      font-family:'Playfair Display',serif;
+      color:#5a2617;
+      margin-bottom:10px;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      padding:35px;
+      border-radius:10px;
+      box-shadow:0 4px 15px rgba(0,0,0,.08);
+      text-align:center;
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#7a2f1d;
+      font-size:1.5rem;
+    }
+
+    .about{
+      background:#e7ded1;
+    }
+
+    .about-content{
+      max-width:900px;
+      margin:auto;
+      text-align:center;
+      font-size:1.1rem;
+    }
+
+    .contact-wrapper{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:start;
+    }
+
+    .contact-box{
+      background:white;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 4px 15px rgba(0,0,0,.08);
+    }
+
+    .contact-box h3{
+      margin-bottom:20px;
+      color:#7a2f1d;
+    }
+
+    .contact-box p{
+      margin-bottom:15px;
+    }
+
+    iframe{
+      width:100%;
+      height:350px;
+      border:none;
+      border-radius:10px;
+    }
+
+    footer{
+      background:#221914;
+      color:white;
+      text-align:center;
+      padding:30px;
+    }
+
+    .highlight{
+      color:#c86f4d;
+      font-weight:bold;
+    }
+
+    @media(max-width:768px){
+
+      .hero-content h1{
+        font-size:2.8rem;
+      }
+
+      nav{
+        flex-direction:column;
+        gap:10px;
+      }
+
+      nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      .contact-wrapper{
+        grid-template-columns:1fr;
+      }
+
+      section{
+        padding:60px 6%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2>HQ Meats</h2>
+
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="hero-content">
+      <h1>HQ Meats</h1>
+
+      <p>
+        Professional beef, pork, and deer processing with
+        quality packaging and trusted farm-style service.
+      </p>
+
+      <a href="tel:6186973444" class="btn">
+        Call Now
+      </a>
+    </div>
+  </header>
+
+  <section id="services">
+
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Reliable meat processing and packaging done right.</p>
+    </div>
+
+    <div class="services">
+
+      <div class="card">
+        <h3>Beef Processing</h3>
+
+        <p>
+          Professional beef processing with quality cuts,
+          packaging, and attention to detail.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Pork Processing</h3>
+
+        <p>
+          Farm-fresh pork processing with customized cutting
+          and packaging options.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Deer Processing</h3>
+
+        <p>
+          Clean and dependable deer processing for hunters
+          throughout the region.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Packaging</h3>
+
+        <p>
+          Durable professional packaging to help preserve
+          freshness and quality.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="about" id="about">
+
+    <div class="section-title">
+      <h2>About HQ Meats</h2>
+    </div>
+
+    <div class="about-content">
+
+      <p>
+        At <span class="highlight">HQ Meats</span>, we take pride in
+        providing dependable meat processing services with a
+        focus on quality, cleanliness, and customer satisfaction.
+      </p>
+
+      <br>
+
+      <p>
+        Located in Vienna, Illinois, we proudly serve local farms,
+        families, and hunters with professional beef, pork, and deer
+        processing and packaging services.
+      </p>
+
+      <br>
+
+      <p>
+        We believe in honest work, quality craftsmanship, and treating
+        every customer like family.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <div class="section-title">
+      <h2>Contact Us</h2>
+      <p>Reach out today for processing information.</p>
+    </div>
+
+    <div class="contact-wrapper">
+
+      <div class="contact-box">
+
+        <h3>HQ Meats</h3>
+
+        <p>
+          <strong>Address:</strong><br>
+          620 Pioneer Road<br>
+          Vienna, IL
+        </p>
+
+        <p>
+          <strong>Phone:</strong><br>
+          <a href="tel:6186973444">
+            618-697-3444
+          </a>
+        </p>
+
+        <p>
+          <strong>Services:</strong><br>
+          Beef Processing<br>
+          Pork Processing<br>
+          Deer Processing<br>
+          Packaging
+        </p>
+
+        <br>
+
+        <a href="tel:6186973444" class="btn">
+          Call HQ Meats
+        </a>
+
+      </div>
+
+      <div>
+        <iframe
+          src="https://maps.google.com/maps?q=620%20Pioneer%20Road%20Vienna%20IL&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>
+      © 2026 HQ Meats | Vienna, Illinois
+    </p>
+  </footer>
+
+</body>
+</html>
